@@ -22,7 +22,7 @@ function Post({posts}) {
             ))}
         
         </div>
-        <Link to={`/post/${posts._id}`} className="link">
+        <Link to={`https://blogappbackendheroku.herokuapp.com/post/${posts._id}`} className="link">
         <span className="postTitle">
         {posts.title}
         </span>
