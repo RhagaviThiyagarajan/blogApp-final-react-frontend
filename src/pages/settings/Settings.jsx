@@ -11,7 +11,7 @@ function Settings() {
 
 
   //images
-  const PF = "https://blogapp-node-heroku.herokuapp.com/images/"
+  const PF = "https://blogappbackendheroku.herokuapp.com/images/"
 
 
 

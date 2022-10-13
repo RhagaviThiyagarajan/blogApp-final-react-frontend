@@ -8,7 +8,7 @@ function TopBar() {
   const {user,dispatch} = useContext(Context);
 
 
-  const PF ="https://blogapp-node-heroku.herokuapp.com/images/";
+  const PF ="https://blogappbackendheroku.herokuapp.com/images/"
 
   const handleLogout=()=>
   {

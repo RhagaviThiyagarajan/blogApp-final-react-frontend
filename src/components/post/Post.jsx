@@ -5,7 +5,7 @@ import {Link} from 'react-router-dom';
 
 function Post({posts}) {
 
-  const PF="https://blogapp-node-heroku.herokuapp.com/images/"
+  const PF="https://blogappbackendheroku.herokuapp.com/images/"
 
   return (
     <div className="post">

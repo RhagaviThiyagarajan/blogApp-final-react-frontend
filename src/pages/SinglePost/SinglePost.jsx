@@ -9,7 +9,7 @@ import { useLocation } from "react-router-dom";
 
 function SinglePost() {
 
-  const PF =  "https://blogapp-node-heroku.herokuapp.com/images/"
+  const PF =  "https://blogappbackendheroku.herokuapp.com/images/"
   const [post, setPost] = useState({});
   const { user } = useContext(Context);
   const location = useLocation();
