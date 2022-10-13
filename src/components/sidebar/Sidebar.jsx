@@ -15,7 +15,7 @@ function Sidebar() {
 
       const getCats=async ()=>
       {
-        const res=await axios.get("/categories");
+        const res=await axios.get("https://blogappbackendheroku.herokuapp.com/categories");
         setCats(res.data);
       };
        getCats();
