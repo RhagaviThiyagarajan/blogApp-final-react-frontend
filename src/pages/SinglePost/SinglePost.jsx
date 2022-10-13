@@ -20,7 +20,7 @@ function SinglePost() {
 
   useEffect(() => {
     const getPost = async () => {
-      const res = await axios.get("/post/" + path);
+      const res = await axios.get("https://blogappbackendheroku.herokuapp.com/post/" + path);
       setPost(res.data);
       setTitle(res.data.title);
       setDesc(res.data.desc);
@@ -30,7 +30,7 @@ function SinglePost() {
 
   const handleDelete = async () => {
     try {
-      await axios.delete(`/post/${post._id}`, {
+      await axios.delete(`https://blogappbackendheroku.herokuapp.com/post/${post._id}`, {
         data: { username: user.username },
       });
       window.location.replace("/");
@@ -39,7 +39,7 @@ function SinglePost() {
 
   const handleUpdate = async () => {
     try {
-      await axios.put(`/post/${post._id}`, {
+      await axios.put(`https://blogappbackendheroku.herokuapp.com/post/${post._id}`, {
         username: user.username,
         title,
         desc,

@@ -37,11 +37,11 @@ function Settings() {
       data.append("file", file);
       updatedUser.profilePicture = filename;
       try {
-        await axios.post("/upload", data);
+        await axios.post("https://blogappbackendheroku.herokuapp.com/upload", data);
       } catch (err) {}
     }
     try {
-      const res = await axios.put("/users/" + user._id, updatedUser);
+      const res = await axios.put("https://blogappbackendheroku.herokuapp.com/users/" + user._id, updatedUser);
       setSuccess(true);
       dispatch({ type: "UPDATE_SUCCESS", payload: res.data });
     } catch (err) {

@@ -14,7 +14,7 @@ function Home() {
 
   useEffect(() => {
     const fetchPost = async () => {
-      const res = await axios.get("/post" + search);
+      const res = await axios.get("https://blogappbackendheroku.herokuapp.com/post" + search);
       setPost(res.data);
       console.log(res.data);
     };
