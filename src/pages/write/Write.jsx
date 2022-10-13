@@ -28,7 +28,8 @@ export default function Write() {
     }
     try {
       const res = await axios.post("https://blogappbackendheroku.herokuapp.com/post", newPost);
-      window.location.replace("/post/" + res.data._id);
+      const rep = await axios.get("https://blogappbackendheroku.herokuapp.com/post");
+      // window.location.replace("/post/" + res.data._id);
     } catch (err) {}
   };
   return (
