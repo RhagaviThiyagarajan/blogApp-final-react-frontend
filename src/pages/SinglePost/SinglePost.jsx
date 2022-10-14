@@ -13,7 +13,7 @@ function SinglePost() {
   const [post, setPost] = useState({});
   const { user } = useContext(Context);
   const location = useLocation();
-  const path = location.pathname.split("https://blogappbackendheroku.herokuapp.com/")[2];
+  const path = location.pathname.split("/")[2];
   const [title, setTitle] = useState("");
   const [desc, setDesc] = useState("");
   const [updateMode, setUpdateMode] = useState(false);
