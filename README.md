@@ -1,3 +1,7 @@
+ backend-https://blogapp-node-heroku.herokuapp.com/
+ MERN STACK- https://nodeblogreact.netlify.app/
+ 
+ 
  NavLinks
  
        <Route exact path="/"goes to {<Home />}></Route>
