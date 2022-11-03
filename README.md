@@ -1,3 +1,14 @@
+deployment
+
+backend-https://blogapp-node-heroku.herokuapp.com/
+ 
+ 
+ MERN STACK- https://nodeblogreact.netlify.app/
+ 
+ 
+ code
+ backend-https://github.com/RhagaviThiyagarajan/blogapp-node.git
+ 
  NavLinks
  
        <Route exact path="/"goes to {<Home />}></Route>
